@@ -1,0 +1,141 @@
+$var_background: #222222;
+$var_green: #00b285;
+$var_backgray: #363636;
+$var_text: #c9c9c9;
+$var_text2: #ababab;
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $var_green;
+    transition: 0.2s;
+}
+
+.landing {
+    font-family: system-ui;
+    background-color: $var_background;
+}
+
+.header {
+    // display: flex;
+    // justify-content: center;
+
+    &__first-row {
+
+    }
+    
+    &__second-row {
+        background-color: $var_backgray;
+    }
+
+    &__nav {
+        display: flex;
+        margin: 0 15px;
+
+        color: $var_text2;
+    }
+
+    &__map-links {
+        display: flex;
+        margin-left: 20em;
+    
+        color: $var_text;
+    }
+}
+
+.active {
+    color: $var_green;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.title {
+    margin: 0 15px;
+
+    color: $var_text;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header-search {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    height: 30px;
+    max-width: 400px;
+    flex: 1 2;
+
+    margin: 0px 5px;
+    padding: 4px 10px;
+
+    border-radius: 3px;
+    background-color: $var_backgray;
+}
+
+.search__input {
+    //width: 250px;
+}
+
+.search__input::placeholder {
+    color: $var_text2;
+}
+
+.search__input:focus {
+    outline: none;
+    color: $var_text2;
+}
+
+.search__btn {
+    color: $var_text2;
+}
+
+.search__input, .search__btn {
+    border: none;
+    background-color: $var_backgray
+}
+
+.socials {
+    display: flex;
+
+    color: $var_green;
+
+    &__icon {
+        margin: 0 7px;
+        font-size: larger;
+    }
+}
+
+.lang-selector {
+    margin: 0 10px;
+    color: $var_text2;
+    background-color: $var_background;
+    border: none;
+}
+
+.header__nav-item, .header__map-links-item {
+    margin: 0 15px;
+}
+
+@media screen and (min-width: 1455px) {
+    .title {
+        margin: 0 40px;
+    }
+
+    .header-search {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 1539px) {
+    .title {
+        margin: 0 82px;
+    }
+}
